@@ -1,0 +1,67 @@
+footer {
+    width: 100% - 8% * 2;  
+    margin: 0 auto;
+    height: 342px;
+    padding-top: 171px;
+    @include tab {
+        width: 100% - 5% * 2;
+        padding-bottom: 20px;
+    }
+
+}
+
+.ft-border {
+    display: block;
+        content: "";
+        width: 100%;
+        border-bottom: 1px solid #7070704D;
+        // margin: 2rem auto 0;
+}
+
+.ft-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 74px;
+    font-size: 3.2rem;
+    font-family: Roboto Mono for Powerline;
+    letter-spacing: 0.32rem;
+    color: #7070704D;
+    @include tab {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    i {
+        color:black;
+    }
+
+    &__logo {
+        @include tab {
+            margin-top: 60px; 
+            margin-bottom: 19px;  
+        }
+    }
+    &__salon {
+        @include tab {
+            letter-spacing: 0.18rem;
+        }
+    }
+}
+
+
+.ft-btn {
+    border: 1px solid $gray;
+    width: 184px;
+    height: 37px;
+    &__rsv {
+        font-size: 1.8rem;
+        color: $gray; 
+        // @include tab {
+        //     margin-top: 62px;
+        // }
+    }
+    
+}
+
+.ft-wrapper__salon span {
+    margin-right: 11.5rem;
+}

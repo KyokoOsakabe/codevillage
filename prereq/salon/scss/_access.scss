@@ -1,0 +1,92 @@
+.access {
+    background-color: $baige;
+   
+}
+ 
+.access-inner {
+    width: 100%;
+    padding: 257px 0 70px;
+    margin: 0 auto;
+    @include tab {
+        padding: 60px 0;
+        width: 100%;
+    }
+}
+.access-bar{
+        margin-left: 10.7rem;
+        @include tab {
+            margin-left: 2.0rem;
+            margin-bottom: 5.0rem;
+        }
+    }
+
+.info-wrapper {
+    display: flex;
+    justify-content: center;
+    @include tab {
+        flex-direction: column-reverse;
+    }
+
+}
+
+.access-info {
+    width: 39%;
+    background-color: #D0C5BA;
+    align-items: center;
+    text-align: left;
+    position: relative;
+    @include tab {
+        position: unset;
+        height: 282px;
+        width: 100%;
+        padding: 30px 20px 60px;
+    }
+    &__wrap {
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @include tab {
+            position: unset;
+            top:0;
+            left:0;
+            transform: translate(0);
+        }
+    }
+    h2 {
+        font-size: 2.4rem;
+        font-family: Roboto Mono for Powerline;
+        color:#00000038;
+        margin-bottom: 30px;
+    }
+    p {
+        font-size: 1.6rem;
+        font-family: Roboto Mono for Powerline;
+        color: #FFFFFF;
+        margin-bottom: 24px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.access-map {
+    // width: 60%;
+    @include tab {
+        height: 0;
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        & iframe {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+    }
+}
+
+
+

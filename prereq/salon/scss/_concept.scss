@@ -1,0 +1,76 @@
+.concept {
+    background: linear-gradient(180deg,$baige 0%,$baige 42%,$grayge 42%, $grayge 100%);
+    @include tab {
+        height: 711px;
+        background: linear-gradient(180deg,$baige 0%,$baige 25%,$grayge 25%, $grayge 100%);
+        
+    }
+}
+
+
+.concept-image {
+    display: flex; 
+    flex-wrap: nowrap;
+    height: 100%;
+    @include tab {
+        justify-content: center;
+    }
+}
+.sitting-woman {
+    width: 63%;
+    margin-right: 11px;
+    @include tab {
+        width: 45%;
+        margin-right: 0.7rem;
+        object-fit: cover;
+    }
+}
+.seaside {
+    width: 37%;
+    @include tab {
+        width: 45%;
+    }
+}
+.concept-wrap {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    color: white;
+    margin: 5.0rem;
+    @include tab {
+        margin: 0;
+        flex-direction: column;
+
+    }
+    article {
+        width: 50%;
+        line-height: 128px;
+        font-size: 4rem;
+        letter-spacing: 1.6rem;
+        font-family: ヒラギノ明朝 Pro;
+        @include tab {
+            width: 100%;
+            font-size: 1.8rem;
+            letter-spacing: 7.2px;
+            text-align: center;
+
+        }
+        
+    }
+    aside {
+        width: 39%;
+        font-size: 1.6rem;
+        font-family: ヒラギノ角ゴ Pro;
+        line-height: 2.7rem;
+        @include tab {
+            width: 100%;
+
+        }
+    }
+}
+
+
+
+
+ 
+    
